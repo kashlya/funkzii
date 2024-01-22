@@ -1,3 +1,6 @@
-l = 8
-for i in range(1, l + 1):
-    print("" * (l - i) + "*" * (i))
+nachalo = int(input("начало- "))
+konez = int(input("конец- "))
+
+for chislo in range(nachalo, konez + 1):
+    if chislo % 7 == 0:
+        print(chislo)
