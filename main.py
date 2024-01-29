@@ -1,6 +1,13 @@
-nachalo = int(input("начало- "))
-konez = int(input("конец- "))
+polendrom = input("полендром или нет: ")
 
-for chislo in range(nachalo, konez + 1):
-    if chislo % 7 == 0:
-        print(chislo)
+shtuka = "".join(s.lower()
+
+for s in polendrom if s.isalnum())
+
+if shtuka == shtuka[::-1]:
+
+    print("это палиндром")
+
+else:
+
+    print("это не палиндром")
