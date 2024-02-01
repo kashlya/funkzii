@@ -1,14 +1,11 @@
-polendrom = input("полендром или нет: ")
-
-shtuka = "".join(s.lower()
-
-for s in polendrom if s.isalnum())
-
-if shtuka == shtuka[::-1]:
-
-    print("это палиндром")
-
+text = input("текст: ")
+slova = input("зарезервируйте слова: ")
+f = slova.split()
+a = []
+for i in text.split():
+    if i in f:
+        a.append(i.upper())
+if a:
+    print(" ".join(a))
 else:
-
-    print("это не палиндром")
-
+    print("не подходят зарезерованные слова")
