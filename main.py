@@ -1,16 +1,5 @@
-text = input("текст: ")
-k = list(text)
-count = 0
-for i in k:
-    if i == ",":
-        count += 1
-for q in k:
-    if q == ".":
-        count += 1
-for e in k:
-    if e == "?":
-        count += 1
-for w in k:
-    if w == "!":
-         count += 1
-print(count)
+pervaia = int(input("первая цифра: "))
+vtoraia = int(input("вторая цифра: "))
+for i in range(pervaia, vtoraia + 1):
+    if i % 7 == 0:
+        print(i)
