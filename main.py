@@ -11,3 +11,4 @@ if shtuka == shtuka[::-1]:
 else:
 
     print("это не палиндром")
+
