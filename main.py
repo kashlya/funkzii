@@ -1,14 +1,12 @@
-suma = 0
-min_ch = 0
-max_ch = 0
-while True:
-    num = int(input("введи число: "))
-    if num == 7:
-        print("good bay")
-        break
-    if num < min_ch:
-        min_ch = num
-    if max_ch < num:
-        max_ch = num
-    suma += num
-print(min_ch, max_ch, suma)
+primer = input("пример: ")
+chast = primer.split()
+num_1, num, num_2 = int(chast[0]), chast[1], int(chast[2])
+if num == "+":
+    otvet = num_1 + num_2
+elif num == "-":
+    otvet = num_1 - num_2
+elif num == "*":
+    otvet = num_1 * num_2
+elif num == "/":
+    otvet = num_1 / num_2
+print(f"ответ: {otvet}")
